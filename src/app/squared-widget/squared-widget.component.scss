@@ -1,0 +1,90 @@
+.square {
+  //border: 1px solid rgba(150, 20, 0, 0.5);
+  border-radius: 0.5em;
+}
+
+.square-sm {
+  width: 5em;
+  height: 5em;
+}
+
+.square-md {
+  width: 15em;
+  height: 15em;
+}
+
+.square-lg {
+  width: 20em;
+  height: 20em;
+}
+
+.pile {
+  width: 30.5em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 1fr 0.3fr 0.3fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'top top'
+    'left title'
+    'left unit'
+    'left value'
+    'bottom bottom';
+}
+
+.left {
+  justify-self: center;
+  align-self: stretch;
+  grid-area: left;
+
+  color: white;
+}
+
+.value {
+  justify-self: start;
+  align-self: center;
+  grid-area: value;
+
+  color: white;
+  font-size: 5.5em;
+  font-weight: 600;
+}
+
+.unit {
+  justify-self: start;
+  align-self: center;
+  grid-area: unit;
+
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.title {
+  justify-self: start;
+  align-self: center;
+  grid-area: title;
+
+  color: white;
+  font-size: 1.2em;
+}
+
+.top {
+  justify-self: start;
+  align-self: center;
+  grid-area: top;
+
+  color: white;
+}
+
+.bottom {
+  justify-self: start;
+  align-self: center;
+  grid-area: bottom;
+
+  color: white;
+}
