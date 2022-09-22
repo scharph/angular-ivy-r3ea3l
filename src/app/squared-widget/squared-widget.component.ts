@@ -16,7 +16,7 @@ export class SquaredWidgetComponent implements OnInit {
   protected val$: Observable<Number>;
 
   constructor() {
-    this.val$ = interval(250).pipe(map((val) => val * 4));
+    this.val$ = interval(100).pipe(map((val) => 70 + (val % 80)));
   }
 
   ngOnInit() {}
